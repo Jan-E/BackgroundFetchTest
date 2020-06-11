@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         let nc = NotificationCenter.default
         
-        nc.addObserver(self, selector: #selector(ViewController.updateLabels), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        nc.addObserver(self, selector: #selector(ViewController.updateLabels), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
